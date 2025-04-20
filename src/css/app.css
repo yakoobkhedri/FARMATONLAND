@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: fanumber-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
+}
+@font-face {
+  font-family: fanumber-Bold;
+  font-weight: 400;
+  src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Medium;
+  font-weight: 500;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Medium.woff') format("woff");
+}
+@font-face {
+  font-family: payda-SemiBold;
+  font-weight: 600;
+  src: url('../src/fonts/payda/woff/PeydaWeb-SemiBold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Bold;
+  font-weight: 700;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-ExtraBold;
+  font-weight: 800;
+  src: url('../src/fonts/payda/woff/PeydaWeb-ExtraBold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Black;
+  font-weight: 900;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Black.woff') format("woff");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+
+  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+
+  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
+}
+.font-faNumRegular{
+  font-weight: 400;
+  @apply ltr:font-MontserratRegular;
+  
+}
+.font-faNumBold{
+  font-weight: 700;
+  @apply ltr:font-MontserratBold;
+}
+.font-normal{
+  font-weight: 400;
+  @apply rtl:font-paydaRegular ltr:font-MontserratRegular;
+}
+.font-medium{
+  font-weight: 500;
+  @apply rtl:font-paydaMedium;
+}
+.font-semibold{
+  font-weight: 600;
+  @apply rtl:font-paydaSemiBold ltr:font-MontserratBold;
+}
+.font-bold{
+  font-weight: 700;
+  @apply rtl:font-paydaBold ltr:font-MontserratBold;
+}
+.font-extrabold{
+  font-weight: 800;
+  @apply rtl:font-paydaExtraBold ltr:font-MontserratBold;
+}
+.font-black{
+  font-weight: 900;
+  @apply rtl:font-paydaBlack ltr:font-MontserratBold;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: payda-Regular !important;
+  user-select: none;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #80E0FF 0%, #71D3F3 50%, #61C5E7 100%);
+}
+/* cloud */
+#rightcloud.active{
+  @apply -right-7 opacity-100 visible;
+}
+#leftcloud.active{
+  @apply -left-12 opacity-100 visible;
+}
+main.active{
+  @apply opacity-0 invisible;
+}
+/* global styles */
+a {
+  cursor: pointer;
+  transition: all .4s
+}
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.transition {
+  @apply transition-all duration-300;
+}
+/* hover */
+.btnHover {
+  transition: all .4s;
+  overflow: hidden;
+  position: relative;
+}
+.btnHover::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+.btnHover:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+.btnHover2:hover{
+  animation: jello-horizontal 0.9s both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+header ul li a.active,header ul li a:hover{
+  color: #FFFFFF;
+}
+.text-shadow-1{
+  text-shadow: 0px 4px #00000040;
+}
+/*  */
+.shadow-1{
+  box-shadow: 0px 16px 80px 0px #D011CC26;
+}
+.shadow-2{
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+.shadow-3{
+  box-shadow: 0px 9px 100px 0px #D011CC59;
+}
+/* accordion */
+.acordionBtn{
+  cursor: pointer;
+}
+.acordionBtn > svg{
+  transition: all .4s;
+}
+.acordionBtn > svg.active{
+  transform: rotate(180deg);
+}
+.acordionContent{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.acordionContent.active {
+  max-height: 2000px;
+  overflow: visible;
+}
+.bg-primary{
+  background: linear-gradient(0deg, #477BFF, #477BFF),
+linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+.bg-gradient-1{
+  background: linear-gradient(99.94deg, #E50AA7 -5.11%, rgba(255, 23, 189, 0) 110.2%);
+}
+.bg-gradient-2{
+  background: linear-gradient(103.84deg, #FFFFFF -25.59%, #F5F5F5 138%);
+}
+/* swiper */
+.swiper-slide{
+  transition: all .4s !important;
+}
+.swiper-button-prev::after,.swiper-button-prev2::after{
+  content: url('../src/img/Polygon\ 1.png') !important;
+}
+.swiper-button-next::after,.swiper-button-next2::after{
+  content: url('../src/img/Polygon 2.png') !important;
+}
+/* overlay */
+#overlay{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.618);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+#overlay.active{
+  visibility: visible;
+  opacity: 100%;
+}
+.mobileMenu.active{
+  left: 0;
+}
+/* accordion */
+.acordionBtn.active svg{
+  transform: rotate(-90deg);
+}
+.acordionBtn svg rect{
+  transition: all .4s;
+}
+.acordionBtn.active svg rect{
+  fill: #EFC26B;
+}
+.accordionContent {
+  transition: all .4s;
+  max-height: 0;
+  overflow: hidden;
+}
+.accordionContent.active {
+  max-height: 2000px;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+  .swiper-slide{
+    opacity: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #carousel div p {
+   display: none;
+  }
+}
+@media (max-width: 400px) {
+}
