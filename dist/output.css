@@ -617,10 +617,6 @@ video {
   right: 0px !important;
 }
 
-.-left-72 {
-  left: -18rem;
-}
-
 .-left-\[2000px\] {
   left: -2000px;
 }
@@ -635,10 +631,6 @@ video {
 
 .-top-64 {
   top: -16rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .left-20 {
@@ -679,10 +671,6 @@ video {
 
 .right-\[13px\] {
   right: 13px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .top-10 {
@@ -737,10 +725,6 @@ video {
   z-index: 20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-\[100\] {
   z-index: 100;
 }
@@ -776,10 +760,6 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .mt-1 {
@@ -932,10 +912,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-\[10\%\] {
@@ -1094,10 +1070,6 @@ video {
   overflow: hidden;
 }
 
-.rounded-\[100px\] {
-  border-radius: 100px;
-}
-
 .rounded-\[20px\] {
   border-radius: 20px;
 }
@@ -1187,28 +1159,14 @@ video {
   padding: 0.5rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -1274,6 +1232,10 @@ video {
   font-size: 28px;
 }
 
+.text-\[6px\] {
+  font-size: 6px;
+}
+
 .text-\[7px\] {
   font-size: 7px;
 }
@@ -1289,6 +1251,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1312,10 +1279,6 @@ video {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-\[\#00000033\] {
@@ -1413,163 +1376,11 @@ video {
 }
 
 @font-face {
-  font-family: fanumber-Regular;
+  font-family: Backso-Regular;
 
   font-weight: 400;
 
-  src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
-}
-
-@font-face {
-  font-family: fanumber-Bold;
-
-  font-weight: 400;
-
-  src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-Regular;
-
-  font-weight: 400;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-Medium;
-
-  font-weight: 500;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-Medium.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-SemiBold;
-
-  font-weight: 600;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-SemiBold.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-Bold;
-
-  font-weight: 700;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-ExtraBold;
-
-  font-weight: 800;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-ExtraBold.woff') format("woff");
-}
-
-@font-face {
-  font-family: payda-Black;
-
-  font-weight: 900;
-
-  src: url('../src/fonts/payda/woff/PeydaWeb-Black.woff') format("woff");
-}
-
-@font-face {
-  font-family: Montserrat-Regular;
-
-  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-
-  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
-}
-
-.font-faNumRegular{
-  font-weight: 400;
-}
-
-:is([dir="ltr"] .font-faNumRegular) {
-  font-family: Montserrat-Regular;
-}
-
-.font-faNumBold{
-  font-weight: 700;
-}
-
-:is([dir="ltr"] .font-faNumBold) {
-  font-family: Montserrat-Bold;
-}
-
-.font-normal{
-  font-weight: 400;
-}
-
-:is([dir="ltr"] .font-normal) {
-  font-family: Montserrat-Regular;
-}
-
-:is([dir="rtl"] .font-normal) {
-  font-family: payda-Regular;
-}
-
-.font-medium{
-  font-weight: 500;
-}
-
-:is([dir="rtl"] .font-medium) {
-  font-family: payda-Medium;
-}
-
-.font-semibold{
-  font-weight: 600;
-}
-
-:is([dir="ltr"] .font-semibold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-semibold) {
-  font-family: payda-SemiBold;
-}
-
-.font-bold{
-  font-weight: 700;
-}
-
-:is([dir="ltr"] .font-bold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-bold) {
-  font-family: payda-Bold;
-}
-
-.font-extrabold{
-  font-weight: 800;
-}
-
-:is([dir="ltr"] .font-extrabold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-extrabold) {
-  font-family: payda-ExtraBold;
-}
-
-.font-black{
-  font-weight: 900;
-}
-
-:is([dir="ltr"] .font-black) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-black) {
-  font-family: payda-Black;
+  src: url('../src/fonts/Backso/Backso.ttf') format("truetype");
 }
 
 html {
@@ -1577,7 +1388,7 @@ html {
 }
 
 body {
-  font-family: payda-Regular !important;
+  font-family: Backso-Regular !important;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -1837,7 +1648,10 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
+  body {
+    background: linear-gradient(180deg, #211B11 25.92%, #FFFFFF 75.07%);
+  }
 }
 
 .placeholder\:text-\[\#FFFFFF8F\]::-moz-placeholder {
@@ -2018,12 +1832,12 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     justify-content: center;
   }
 
-  .sm\:gap-11 {
-    gap: 2.75rem;
-  }
-
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:rounded-2xl {
@@ -2032,6 +1846,11 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 
   .sm\:border-\[6px\] {
     border-width: 6px;
+  }
+
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .sm\:px-7 {
@@ -2065,21 +1884,22 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     padding-top: 2.5rem;
   }
 
-  .sm\:text-\[22px\] {
-    font-size: 22px;
-  }
-
   .sm\:text-\[32px\] {
     font-size: 32px;
   }
 
-  .sm\:text-\[72px\] {
-    font-size: 72px;
+  .sm\:text-\[55px\] {
+    font-size: 55px;
   }
 
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
@@ -2126,10 +1946,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     display: block;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -2146,8 +1962,8 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     font-size: 40px;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -2170,50 +1986,65 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     margin-right: 6rem !important;
   }
 
-  .lg\:mb-\[317px\] {
-    margin-bottom: 317px;
-  }
-
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:\!flex {
     display: flex !important;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-auto {
     width: auto;
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:items-center {
-    align-items: center;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
-  }
-
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:gap-10 {
+  .xl\:mb-\[317px\] {
+    margin-bottom: 317px;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:gap-10 {
     gap: 2.5rem;
   }
 
-  .xl\:gap-11 {
-    gap: 2.75rem;
-  }
-
-  .xl\:gap-16 {
+  .\32xl\:gap-16 {
     gap: 4rem;
   }
 }
