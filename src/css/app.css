@@ -15,7 +15,7 @@ body {
   font-family: Backso-Regular !important;
   user-select: none;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #80E0FF 0%, #71D3F3 50%, #61C5E7 100%);
+  background: linear-gradient(180deg, #0A96C4 0%, #71D3F3 50%, #61C5E7 100%);
 }
 /* cloud */
 #rightcloud.active{
@@ -216,7 +216,5 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   }
 }
 @media (max-width: 576px) {
-  body {
-    background: linear-gradient(180deg, #211B11 25.92%, #FFFFFF 75.07%);
-  }
+ 
 }
