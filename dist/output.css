@@ -617,6 +617,10 @@ video {
   right: 0px !important;
 }
 
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
 .-left-\[2000px\] {
   left: -2000px;
 }
@@ -627,10 +631,6 @@ video {
 
 .-top-2 {
   top: -0.5rem;
-}
-
-.-top-64 {
-  top: -16rem;
 }
 
 .left-20 {
@@ -689,6 +689,10 @@ video {
   top: 5rem;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
 .top-32 {
   top: 8rem;
 }
@@ -709,40 +713,20 @@ video {
   top: 20rem;
 }
 
-.top-\[49px\] {
-  top: 49px;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
-.-top-44 {
-  top: -11rem;
-}
-
 .top-\[216px\] {
   top: 216px;
 }
 
-.bottom-3 {
-  bottom: 0.75rem;
+.top-\[49px\] {
+  top: 49px;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
+.-top-5 {
+  top: -1.25rem;
 }
 
-.-bottom-1 {
-  bottom: -0.25rem;
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-1 {
@@ -788,6 +772,10 @@ video {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-5 {
@@ -848,10 +836,6 @@ video {
 
 .mt-\[190px\] {
   margin-top: 190px;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -1002,6 +986,10 @@ video {
   width: 100%;
 }
 
+.w-\[127px\] {
+  width: 127px;
+}
+
 .max-w-\[194px\] {
   max-width: 194px;
 }
@@ -1094,12 +1082,12 @@ video {
   gap: 1.25rem;
 }
 
-.gap-\[14px\] {
-  gap: 14px;
-}
-
 .gap-\[10px\] {
   gap: 10px;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
 }
 
 .overflow-auto {
@@ -1268,8 +1256,8 @@ video {
   font-size: 10px;
 }
 
-.text-\[28px\] {
-  font-size: 28px;
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .text-\[6px\] {
@@ -1311,10 +1299,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
 }
 
 .font-bold {
@@ -1697,6 +1681,9 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 }
 
 @media (max-width: 576px) {
+  body{
+    background: linear-gradient(180deg, #0A9CCD 25.92%, #E3E3E3 75.07%);
+  }
 }
 
 .placeholder\:text-\[\#FFFFFF8F\]::-moz-placeholder {
@@ -1739,6 +1726,14 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 
   .sm\:top-96 {
     top: 24rem;
+  }
+
+  .sm\:top-28 {
+    top: 7rem;
+  }
+
+  .sm\:top-12 {
+    top: 3rem;
   }
 
   .sm\:col-span-6 {
@@ -1787,6 +1782,10 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 
   .sm\:mt-\[314px\] {
     margin-top: 314px;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
   }
 
   .sm\:block {
@@ -1893,9 +1892,9 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     border-width: 6px;
   }
 
-  .sm\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-7 {
@@ -1911,11 +1910,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .sm\:\!pb-\[57px\] {
@@ -1934,8 +1928,8 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     padding-top: 2.5rem;
   }
 
-  .sm\:text-\[32px\] {
-    font-size: 32px;
+  .sm\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .sm\:text-\[55px\] {
@@ -1962,12 +1956,17 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     line-height: 1.75rem;
   }
 
-  .sm\:text-\[28px\] {
-    font-size: 28px;
-  }
-
   .sm\:leading-10 {
     line-height: 2.5rem;
+  }
+
+  .sm\:text-\[\#FFFFFF6E\] {
+    color: #FFFFFF6E;
+  }
+
+  .sm\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
@@ -2016,17 +2015,13 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     gap: 2.75rem;
   }
 
-  .md\:text-\[40px\] {
-    font-size: 40px;
+  .md\:text-\[36px\] {
+    font-size: 36px;
   }
 
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-\[36px\] {
-    font-size: 36px;
   }
 }
 
@@ -2100,10 +2095,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     gap: 1rem;
   }
 
-  .xl\:gap-8 {
-    gap: 2rem;
-  }
-
   .xl\:gap-5 {
     gap: 1.25rem;
   }
@@ -2112,10 +2103,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 @media (min-width: 1536px) {
   .\32xl\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .\32xl\:gap-16 {
-    gap: 4rem;
   }
 
   .\32xl\:gap-12 {

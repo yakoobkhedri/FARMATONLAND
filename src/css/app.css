@@ -216,5 +216,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   }
 }
 @media (max-width: 576px) {
- 
+  body{
+    background: linear-gradient(180deg, #0A9CCD 25.92%, #E3E3E3 75.07%);
+  }
 }
